@@ -7,31 +7,31 @@ class StoriesSection extends StatelessWidget {
   final List<StoryData> stories = [
     StoryData(
       username: 'Ruffles',
-      imageUrl: 'assets/ruffles.jpg',
+      imageUrl: 'assets/images/profile.png',
       hasAddButton: true,
       isViewed: true,
     ),
     StoryData(
       username: 'sabanok...',
-      imageUrl: 'assets/sabanok.jpg',
+      imageUrl: 'assets/images/profile.png',
       hasAddButton: false,
       isViewed: false,
     ),
     StoryData(
       username: 'blue_bouy',
-      imageUrl: 'assets/blue_bouy.jpg',
+      imageUrl: 'assets/images/profile.png',
       hasAddButton: false,
       isViewed: false,
     ),
     StoryData(
       username: 'waggles',
-      imageUrl: 'assets/waggles.jpg',
+      imageUrl: 'assets/images/profile.png',
       hasAddButton: false,
       isViewed: false,
     ),
     StoryData(
       username: 'steve.lo',
-      imageUrl: 'assets/steve.jpg',
+      imageUrl: 'assets/images/profile.png',
       hasAddButton: false,
       isViewed: false,
     ),

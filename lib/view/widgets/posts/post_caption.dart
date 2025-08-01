@@ -17,7 +17,7 @@ class PostCaption extends StatelessWidget {
               text: username,
               style: TextStyle(fontWeight: FontWeight.w600),
             ),
-            TextSpan(text: caption),
+            TextSpan(text: "  $caption   "),
             TextSpan(
               text: 'more',
               style: TextStyle(color: Colors.grey[600]),

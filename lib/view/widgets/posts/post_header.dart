@@ -14,10 +14,7 @@ class PostHeader extends StatelessWidget {
       padding: EdgeInsets.all(12),
       child: Row(
         children: [
-          CircleAvatar(
-            radius: 16,
-            backgroundImage: AssetImage('assets/ruffles.jpg'),
-          ),
+          CircleAvatar(radius: 16, backgroundImage: NetworkImage(userProfile)),
           SizedBox(width: 12),
           Expanded(
             child: Column(

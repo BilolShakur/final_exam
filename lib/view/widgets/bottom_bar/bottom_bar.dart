@@ -20,7 +20,7 @@ class InstagramBottomBar extends StatelessWidget {
           BottomBarItem(
             icon: Icons.person,
             isProfile: true,
-            profileImage: 'assets/profile.jpg',
+            profileImage: 'assets/images/durant.png',
           ),
         ],
       ),

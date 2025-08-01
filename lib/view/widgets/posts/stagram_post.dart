@@ -3,9 +3,9 @@ import 'package:final_exam/models/post_model.dart';
 import 'post_header.dart';
 import 'post_image.dart';
 import 'post_action.dart';
-import '../post_likes.dart';
-import '../post_caption.dart';
-import '../post_coments.dart';
+import 'post_likes.dart';
+import 'post_caption.dart';
+import 'post_coments.dart';
 
 class InstagramPost extends StatelessWidget {
   final Post post;
