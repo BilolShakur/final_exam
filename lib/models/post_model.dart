@@ -30,7 +30,6 @@ class Post {
     };
   }
 
-  // For creating a Post from a Firebase Map
   factory Post.fromMap(Map<String, dynamic> map) {
     return Post(
       id: map['id'],

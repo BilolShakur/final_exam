@@ -32,7 +32,7 @@ class PostBloc extends Bloc<PostEvent, PostState> {
     _isFetchingMore = true;
 
     try {
-      await repository.fetchMorePosts(); // appends to cache
+      await repository.fetchMorePosts();
       emit(PostLoaded(repository.cachedPosts, hasMore: repository.hasMore));
     } catch (e) {
       emit(PostError(e.toString()));
