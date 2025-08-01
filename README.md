@@ -12,6 +12,6 @@
 
 **firabase**
 <br>
-<img src="images_readme/1.png" width="300">
+<img src="images_readme/2.png" width="300">
 
 **Video lar ni fayl qib yuklaganman projectda**
