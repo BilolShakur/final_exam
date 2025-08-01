@@ -1,0 +1,30 @@
+{
+  "project_info": {
+    "project_number": "766222149838",
+    "firebase_url": "https://finalexam-7d89d-default-rtdb.firebaseio.com",
+    "project_id": "finalexam-7d89d",
+    "storage_bucket": "finalexam-7d89d.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:766222149838:android:3c8f6b9b29aa504d10089f",
+        "android_client_info": {
+          "package_name": "com.example.final_exam"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAqXMuelJ2JRs1yFS3fnuClsVL2d248vBU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
