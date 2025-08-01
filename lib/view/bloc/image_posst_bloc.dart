@@ -7,6 +7,7 @@ import 'package:final_exam/view_model/posts_reposotory.dart';
 
 class PostBloc extends Bloc<PostEvent, PostState> {
   final PostRepository repository;
+  bool _isFetchingMore = false;
 
   PostBloc({required this.repository}) : super(PostInitial()) {
     on<FetchPosts>(_onFetchPosts);
@@ -27,12 +28,16 @@ class PostBloc extends Bloc<PostEvent, PostState> {
     FetchMorePosts event,
     Emitter<PostState> emit,
   ) async {
-    if (!repository.hasMore) return;
+    if (!repository.hasMore || _isFetchingMore) return;
+    _isFetchingMore = true;
+
     try {
-      final morePosts = await repository.fetchMorePosts();
+      await repository.fetchMorePosts(); // appends to cache
       emit(PostLoaded(repository.cachedPosts, hasMore: repository.hasMore));
     } catch (e) {
       emit(PostError(e.toString()));
+    } finally {
+      _isFetchingMore = false;
     }
   }
 }
